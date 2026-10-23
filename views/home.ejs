@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="My portfolio website">
+    <title>My Portfolio | Vaqueros</title>
+    <link rel="stylesheet" href="css/content.css">
+</head>
+<body>
+    <!-- Step 3: dynamically outputted-->
+<h1>Welcome Back <%=username %></h1>
+<!-- Step 7: partials used as header or footer-->
+<%- include("partials/header.ejs") %>
+
+ <main>
+        <section class="intro">
+            <p>WELCOME TO MY PORTFOLIO</p>
+
+            <h1>Hi, I'm Vaqueros.</h1>
+
+            <p>
+                Building websites and learning modern web development.
+            </p>
+
+            <!-- Step 6: Update the path-->
+            <a href="/about">Learn About Me</a>
+            <a href="/contact">Contact Me</a>
+        </section>
+
+    </main>
+    <!-- Step 7: partials used as header or footer-->
+    <%- include("partials/footer.ejs") %>
+</body>
+</html>
+
